@@ -31,7 +31,7 @@ module Stats
       end
     end
 
-    return nil if elements_used.zero?
+    return nil if elements_used < 1
     Math.sqrt(sum_of_squares / elements_used.to_f)
   end
 
